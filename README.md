@@ -1,4 +1,4 @@
-# Hestia Web - Admin Frontend
+# Hestia Web - Landlord Frontend
 
 > Alpha relese
 
@@ -9,13 +9,13 @@
 1. Clone the repository
 
 ```bash
-git clone https://github.com/Dune-Global/hestia-admin-frontend.git
+git clone https://github.com/Dune-Global/hestia-landlord-frontend.git
 ```
 
 2. Change directories
 
 ```bash
-cd hestia-admin-frontend
+cd hestia-landlord-frontend
 ```
 
 3. Install dependencies
