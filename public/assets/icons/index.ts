@@ -1,0 +1,13 @@
+export { AcIcon } from "./air-conditioning";
+export { ApartmentIcon } from "./apartment";
+export { FireExtinguisherIcon } from "./fire-extinguisher";
+export { FirstAidIcon } from "./first-aid-kit";
+export { GymIcon } from "./gym";
+export { HostelIcon } from "./hostel";
+export { HouseIcon } from "./house";
+export { OutdoorDiningIcon } from "./outdoor-dining";
+export { PoolIcon } from "./pool";
+export { SmokeAlarmIcon } from "./smoke-alarm";
+export { StudentIcon } from "./student";
+export { TvIcon } from "lucide-react";
+export { WifiIcon } from "lucide-react";
