@@ -2,7 +2,6 @@ const Container = ({
   children,
 }: {
   children: React.ReactNode;
-  className?: string;
 }) => {
   return (
     <div
