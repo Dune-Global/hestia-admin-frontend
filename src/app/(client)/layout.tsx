@@ -21,9 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="sticky top-0 z-50">{/* <LoginNavbar /> */}</div>
         {children}
-        <main>
-          <Footer />
-        </main>
+        <Footer />
       </body>
     </html>
   );
