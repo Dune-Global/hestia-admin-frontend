@@ -24,19 +24,19 @@ export default {
       },
     },
     colors: {
-      gray: {
-        0: "hsl(var(--gray-0))",
-        50: "hsl(var(--gray-50))",
-        100: "hsl(var(--gray-100))",
-        200: "hsl(var(--gray-200))",
-        300: "hsl(var(--gray-300))",
-        400: "hsl(var(--gray-400))",
-        500: "hsl(var(--gray-500))",
-        600: "hsl(var(--gray-600))",
-        700: "hsl(var(--gray-700))",
-        800: "hsl(var(--gray-800))",
-        900: "hsl(var(--gray-900))",
-        950: "hsl(var(--gray-950))",
+      hgray: {
+        0: "hsl(var(--hgray-0))",
+        50: "hsl(var(--hgray-50))",
+        100: "hsl(var(--hgray-100))",
+        200: "hsl(var(--hgray-200))",
+        300: "hsl(var(--hgray-300))",
+        400: "hsl(var(--hgray-400))",
+        500: "hsl(var(--hgray-500))",
+        600: "hsl(var(--hgray-600))",
+        700: "hsl(var(--hgray-700))",
+        800: "hsl(var(--hgray-800))",
+        900: "hsl(var(--hgray-900))",
+        950: "hsl(var(--hgray-950))",
       },
       peach: {
         50: "hsl(var(--peach-50))",
@@ -51,16 +51,16 @@ export default {
         900: "hsl(var(--peach-900))",
         950: "hsl(var(--peach-950))",
       },
-      green: {
-        400: "hsl(var(--green-400))",
+      hgreen: {
+        400: "hsl(var(--hgreen-400))",
       },
-      yellow: {
-        400: "hsl(var(--yellow-400))",
+      hyellow: {
+        400: "hsl(var(--hyellow-400))",
       },
       red: {
-        400: "hsl(var(--red-400))",
+        400: "hsl(var(--hred-400))",
       },
-      
+
       transparent: "transparent",
 
       keyframes: {
