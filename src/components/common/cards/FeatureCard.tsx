@@ -7,6 +7,7 @@ interface FeatureCardProps {
   svg?: React.ReactElement;
   text?: string;
   bottomText: string;
+  clickable?: boolean;
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
@@ -14,12 +15,13 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   svg,
   text,
   bottomText,
+  clickable = false,
 }) => {
   return (
     <div
-      className={`min-w-[190px] min-h-[115px] bg-white border-2 border-gray-300 rounded-xl p-4 flex flex-col  items-center ${
+      className={`w-[190px] min-w-[190px]  min-h-[115px] bg-white border-2 border-gray-300 rounded-xl p-4 flex flex-col  items-center ${
         variant === "svg" ? "justify-between gap-2" : "justify-evenly"
-      }`}
+      } ${clickable ? "cursor-pointer" : "cursor-default"}`}
     >
       <div className="flex items-center justify-center h-full">
         {variant === "svg" ? (
