@@ -24,7 +24,7 @@ function PendingPropertiesPage() {
         </div>
       </div>
       <div className="pb-16">
-        <PendingPropertyCard />
+        <PendingPropertyCard id={0} image={undefined} name={""} location={""} bedrooms={0} beds={0} bathrooms={0} />
       </div>
     </Container>
   );
