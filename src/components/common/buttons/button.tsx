@@ -9,11 +9,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-peach-700 text-gray-0 hover:opacity-80",
-        fillBlack: "bg-gray-800 text-gray-0 hover:opacity-80",
+        default: "bg-peach-700 text-hgray-0 hover:opacity-80",
+        fillBlack: "bg-hgray-800 text-hgray-0 hover:opacity-80",
         outline:
-          "flex h-10 w-full rounded-md border border-gray-800 bg-gray-0 px-3 py-2 text-sm text-gray-950 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:border-gray-400 disabled:cursor-not-allowed disabled:opacity-50",
-        icon: "bg-peach-700 text-gray-0 hover:opacity-80 rounded-full p-[6px]",
+          "flex h-10 w-full rounded-md border border-hgray-800 bg-hgray-0 px-3 py-2 text-sm text-hgray-950 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:border-hgray-400 disabled:cursor-not-allowed disabled:opacity-50",
+        icon: "bg-peach-700 text-hgray-0 hover:opacity-80 rounded-full p-[6px]",
       },
       isDisabled: {
         true: "opacity-50 pointer-events-none",
@@ -69,7 +69,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
         ref={ref}
         {...props}
-        disabled={loading || disabled}>
+        disabled={loading || disabled}
+      >
         {loading ? (
           <>
             {children}
