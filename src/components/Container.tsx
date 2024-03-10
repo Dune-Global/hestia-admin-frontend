@@ -5,6 +5,7 @@ const Container = ({
 }) => {
   return (
     <div
+
       className={`
             relative
             max-w-[1500px]
@@ -14,6 +15,8 @@ const Container = ({
             sm:px-10
             px-6
         `}
+
+
     >
       {children}
     </div>
