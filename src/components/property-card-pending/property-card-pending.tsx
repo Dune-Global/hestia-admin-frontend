@@ -3,33 +3,41 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../common/buttons";
 
-type Props = {};
+interface PendingPropertyCardProps {
+  id: number;
+  image: any;
+  name: string;
+  location: string;
+  bedrooms: number;
+  beds: number;
+  bathrooms: number;
+}
 
-const PendingPropertyCard = (props: Props) => {
+const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({id, image, name, location, bedrooms, beds, bathrooms}) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {Properties.map((properties) => (
         <div
           className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg"
-          key={properties.id}
+          key={id}
         >
           <div>
             <Image
-              src={properties.image}
-              alt={properties.name}
+              src={image}
+              alt={name}
               width={600}
               height={100}
               objectFit="cover"
             />
           </div>
-          <div className="text-lg pt-2 font-medium">{properties.name}</div>
-          <div className="text-hgray-500">{properties.location}</div>
+          <div className="text-lg pt-2 font-medium">{name}</div>
+          <div className="text-hgray-500">{location}</div>
           <div className="flex text-sm md:text-xs lg:text-sm gap-1 pb-2 text-hgray-500 flex-1">
-            <div>{properties.bedrooms} bedroom</div>
+            <div>{bedrooms} bedroom</div>
             <div>-</div>
-            <div>{properties.beds} beds</div>
+            <div>{beds} beds</div>
             <div>-</div>
-            <div>{properties.bathrooms} bathroom</div>
+            <div>{bathrooms} bathroom</div>
           </div>
           <div className="flex gap-3">
             <div>
