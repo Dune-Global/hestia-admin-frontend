@@ -2,7 +2,9 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/common/buttons/button";
 import Container from "@/components/Container";
-function PendingProperties() {
+import PendingPropertyCard from "@/components/property-card-pending/property-card-pending";
+
+function PendingPropertiesPage() {
   return (
     <Container>
       <div className="flex items-center md:items-start justify-center md:justify-between flex-col md:flex-row gap-4 py-16">
@@ -21,9 +23,11 @@ function PendingProperties() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="pb-16">
+        <PendingPropertyCard />
+      </div>
     </Container>
   );
 }
 
-export default PendingProperties;
+export default PendingPropertiesPage;
