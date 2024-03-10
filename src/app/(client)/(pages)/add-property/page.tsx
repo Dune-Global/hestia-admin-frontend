@@ -6,6 +6,7 @@ import Container from "@/components/Container";
 import LongCard from "@/components/common/cards/LongCard";
 import accomodationTypeData from "@/data/add-property/accomodationMethod";
 import buildingTypeData from "@/data/add-property/buildingType";
+import TextInput from "@/components/common/text-inputs/TextInput";
 
 const AddProperty = () => {
   const questionStyles = "font-bold text-[24px] leading-[32px]";
@@ -60,12 +61,19 @@ const AddProperty = () => {
       {/* Map */}
       <div className="mt-16 flex flex-col gap-10">
         <h3 className={`${questionStyles}`}>Where's your place located?</h3>
-        <div className="flex gap-6">
-          <div className="rounded-xl w-[50%] min-w-[50%] min-h-[750px] bg-gray-400"></div>
-          <div>
-            <textarea name="" id="" cols={30} rows={10}>
+        <div className="flex gap-6 justify-between items-center">
+          <div className="rounded-xl w-[50%] min-w-[50%] min-h-[700px] bg-gray-400"></div>
+          <div className="w-full flex flex-col gap-12">
+            {/* <textarea name="" id="" cols={30} rows={10}>
               seadkfjdl
-            </textarea>
+            </textarea> */}
+            <TextInput placeholder="Address line 1" />
+            <TextInput placeholder="Address line 2" />
+            <TextInput placeholder="Address line 3" />
+            <TextInput placeholder="Address line 4" />
+            <TextInput placeholder="City" />
+            <TextInput placeholder="Province" />
+            <TextInput placeholder="Postal code" />
           </div>
         </div>
       </div>
