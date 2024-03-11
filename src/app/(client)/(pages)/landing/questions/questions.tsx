@@ -67,7 +67,9 @@ export default function Questions() {
           <div>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-lg">What are Hestia’s fees?</AccordionTrigger>
+                <AccordionTrigger className="text-lg">
+                  What are Hestia’s fees?
+                </AccordionTrigger>
                 <AccordionContent>
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
