@@ -9,7 +9,9 @@ function PendingPropertiesPage() {
     <Container>
       <div className="flex items-center md:items-start justify-center md:justify-between flex-col md:flex-row gap-4 py-16">
         <div className="flex flex-col gap-3">
-          <div className="text-2xl md:text-4xl font-bold">Pending properties.</div>
+          <div className="text-2xl md:text-4xl font-bold">
+            Pending properties.
+          </div>
           <div className="text-xs md:text-sm">
             Check below to see which of your properties are still pending
           </div>
