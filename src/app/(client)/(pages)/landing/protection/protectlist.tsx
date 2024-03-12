@@ -24,10 +24,10 @@ export default function ProtectList() {
         <div className="sm:flex-1 flex text-base"> {ProtectionList1}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
           <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check />
+            <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400  ">
-            <X />
+            <X strokeWidth={5}/>
           </div>
         </div>
       </div>
@@ -40,10 +40,10 @@ export default function ProtectList() {
         <div className="sm:flex-1 flex text-base"> {ProtectionList2}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
           <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check />
+            <Check strokeWidth={5}/>
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X />
+            <X strokeWidth={5}/>
           </div>
         </div>
       </div>
@@ -55,10 +55,10 @@ export default function ProtectList() {
         <div className="sm:flex-1 flex text-base"> {ProtectionList3}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
           <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check />
+            <Check strokeWidth={5}/>
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X />
+            <X strokeWidth={5}/>
           </div>
         </div>
       </div>
@@ -70,10 +70,10 @@ export default function ProtectList() {
         <div className="sm:flex-1 flex text-base"> {ProtectionList4}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
           <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check />
+            <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X />
+            <X strokeWidth={5} />
           </div>
         </div>
       </div>
@@ -85,10 +85,10 @@ export default function ProtectList() {
         <div className="sm:flex-1 flex text-base"> {ProtectionList5}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
           <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check />
+            <Check strokeWidth={5}/>
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X />
+            <X strokeWidth={5}/>
           </div>
         </div>
       </div>

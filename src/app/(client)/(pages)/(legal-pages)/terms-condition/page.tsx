@@ -17,7 +17,9 @@ export default function TermsCondition() {
           <h1 className="font-semibold  text-lg">Use of Our Services</h1>
 
           {Our_service}
-          <h1 className="font-semibold  text-lg">Property Listings and Bookings</h1>
+          <h1 className="font-semibold  text-lg">
+            Property Listings and Bookings
+          </h1>
           {Property}
           <h1 className="font-semibold  text-lg"> Payment and Fees</h1>
           {Payment}
