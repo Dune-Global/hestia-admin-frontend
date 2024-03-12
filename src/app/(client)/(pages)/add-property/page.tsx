@@ -13,6 +13,7 @@ import {
   amenitiesData,
   safetyAmenitiesData,
 } from "@/data/add-property/amenities";
+import { Images } from "lucide-react";
 
 const AddProperty = () => {
   const questionStyles = "font-bold text-[24px] leading-[32px]";
@@ -147,7 +148,9 @@ const AddProperty = () => {
             You'll need 5 to get started.
           </h4>
         </div>
-        <div className="border border-gray-400 h-[456px] max-h-[456px] rounded-xl"></div>
+        <div className="border border-gray-400 h-[456px] max-h-[456px] rounded-xl flex justify-center items-center">
+          <Images size={64} strokeWidth={1} color="gray" />
+        </div>
       </div>
     </Container>
   );
