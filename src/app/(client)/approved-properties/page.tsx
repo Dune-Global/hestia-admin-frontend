@@ -4,6 +4,9 @@ import { Button } from "@/components/common/buttons/button";
 import Container from "@/components/Container";
 import { Properties } from "@/data/properties";
 import PropertyCard from "@/components/property-card/property-card";
+import { MdPerson } from "react-icons/md";
+import { BiSolidMessage } from "react-icons/bi";
+
 
 export default function PendingPropertiesPage() {
   return (
@@ -43,13 +46,24 @@ export default function PendingPropertiesPage() {
             />
             <div className="flex gap-3">
               <div>
-                <Button variant="fillBlack" size="sm">
-                  Edit
+                <Button variant="outline" size="sm">
+                  Delete
                 </Button>
               </div>
               <div>
-                <Button variant="outline" size="sm">
-                  Delete
+                <Button variant="outline" size="freeSize">
+                  <div className="flex items-center gap-2">
+                    <div><MdPerson size={24}/></div>
+                    <div>{property.activeTenants}</div>
+                  </div>
+                </Button>
+              </div>
+              <div>
+                <Button variant="outline" size="freeSize">
+                  <div className="flex items-center gap-2">
+                    <div><BiSolidMessage size={20}/></div>
+                    <div>{property.bookingRequests}</div>
+                  </div>
                 </Button>
               </div>
             </div>
@@ -58,4 +72,4 @@ export default function PendingPropertiesPage() {
       </div>
     </Container>
   );
-};
+}
