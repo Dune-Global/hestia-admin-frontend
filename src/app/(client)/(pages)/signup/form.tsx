@@ -78,7 +78,7 @@ const SignupForm = (props: Props) => {
 
   return (
     <div className="flex flex-col gap-4 items-end justify-center ">
-      <div className="flex flex-col gap-2 px-8 py- w-[300px]  md:py-5 h- items-center justify-center shadow-2xl rounded-lg sm:w-[500px]">
+      <div className="flex flex-col gap-2 px-8 py- w-[350px]  md:py-5 h- items-center justify-center shadow-2xl rounded-lg sm:w-[500px]">
         <div className="flex flex-col gap-2  items-center">
           <h2 className="font-extrabold text-4xl ">Sign Up</h2>
           <div className="text-sm text-center ">
@@ -190,13 +190,13 @@ const SignupForm = (props: Props) => {
                           {showPassword ? (
                             <EyeOff
                               size={22}
-                              strokeWidth={2}
+                              strokeWidth={1}
                               className="text-gray-600"
                             />
                           ) : (
                             <Eye
                               size={22}
-                              strokeWidth={2}
+                              strokeWidth={1}
                               className="text-gray-600"
                             />
                           )}
@@ -232,13 +232,13 @@ const SignupForm = (props: Props) => {
                           {showPassword2 ? (
                             <EyeOff
                               size={22}
-                              strokeWidth={2}
+                              strokeWidth={1}
                               className="text-gray-600"
                             />
                           ) : (
                             <Eye
                               size={22}
-                              strokeWidth={2}
+                              strokeWidth={1}
                               className="text-gray-600"
                             />
                           )}

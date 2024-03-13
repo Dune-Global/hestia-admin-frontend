@@ -20,7 +20,7 @@ export default function SignIn() {
             <Image
               src={"/assets/images/signin_signup/image.png"}
               alt=""
-              width={600}
+              width={580}
               height={50}
               className=""
             ></Image>{" "}
