@@ -10,10 +10,10 @@ import Hostinglinks from "@/data/footer/footerhostinglinks";
 import Container from "@/components/Container";
 export default function Footer() {
   return (
-    <div className="bg-gray-900 h-auto text-gray-0">
+    <div className="bg-gray-900 h-auto ">
       <Container>
         <div className="gap-y-8 flex flex-col py-5">
-          <div className="flex flex-col md:flex-row items-center gap-5 justify-between pt-8 lg:text-base   text-sm ">
+          <div className="flex flex-col md:flex-row items-center gap-5 justify-between pt-8 lg:text-base   text-sm text-gray-200 ">
             <div className="flex flex-row lg:gap-40 sm:gap-20 gap-14">
               <div className=" flex flex-col items-start lg:gap-y-7 gap-4  ">
                 <h1 className="font-bold text-lg  "> Hestia</h1>
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Divider */}
           <div className="bg-gray-600 h-[0.1px] w-full flex "></div>
-          <div className="flex sm:flex-row flex-col  justify-between items-center  gap-4  ">
+          <div className="flex sm:flex-row flex-col  justify-between items-center  gap-4 text-gray-400 ">
             <div>
               Copyright &copy;{Year} | {name}{" "}
             </div>
