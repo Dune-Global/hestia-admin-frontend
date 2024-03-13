@@ -17,16 +17,16 @@ export default function Signup() {
           </div>
         </div>
         <div className="flex flex-col  lg:flex-row  justify-between">
-          <div className="flex  h-[750px] justify-center ">
+          <div className="flex  h-[700px] justify-center ">
             <Image
               src={"/assets/images/signin_signup/image.png"}
               alt=""
-              width={600}
+              width={550}
               height={50}
               className=""
             ></Image>{" "}
           </div>
-          <div className="flex  justify-center h-[750px]">
+          <div className="flex  justify-center h-[]">
             <SignupForm />
           </div>
         </div>
