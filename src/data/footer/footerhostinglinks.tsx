@@ -9,7 +9,7 @@ const Hostinglinks: IFooterHosting[] = [
   {
     id: 5,
     name: "Pending",
-    link: "/pending",
+    link: "/pending-properties",
   },
   {
     id: 6,
