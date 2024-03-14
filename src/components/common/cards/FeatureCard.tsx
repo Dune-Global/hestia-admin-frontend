@@ -19,9 +19,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-[190px] min-w-[190px]  min-h-[115px] bg-white border-2 border-gray-300 rounded-xl p-4 flex flex-col  items-center ${
-        variant === "svg" ? "justify-between gap-2" : "justify-evenly"
-      } ${clickable ? "cursor-pointer" : "cursor-default"}`}
+      className={`w-[190px] min-w-[190px]  min-h-[115px] bg-white border-2 border-hgray-400 rounded-xl p-3.5 flex flex-col  items-center ${variant === "svg" ? "justify-between gap-2" : "justify-evenly"
+        } ${clickable ? "cursor-pointer" : "cursor-default"}`}
     >
       <div className="flex items-center justify-center h-full">
         {variant === "svg" ? (
@@ -32,7 +31,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           </div>
         )}
       </div>
-      <div className="text-gray-900 font-medium text-lg">{bottomText}</div>
+      <div className="text-gray-900 font-medium text-lg text-center">{bottomText}</div>
     </div>
   );
 };
