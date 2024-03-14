@@ -29,7 +29,7 @@ export default function Landing() {
           </div>
         </div>
       </Container>
-      <div className="bg-gray-100">
+      <div className="bg-hgray-100">
         <Container>
           <div className="py-16">
             <Questions />

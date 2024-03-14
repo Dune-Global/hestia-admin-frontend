@@ -69,7 +69,7 @@ const AddProperty = () => {
       <div className="mt-16 flex flex-col gap-10">
         <h3 className={`${questionStyles}`}>Where's your place located?</h3>
         <div className="flex gap-6 justify-between items-center">
-          <div className="rounded-xl w-[50%] min-w-[50%] min-h-[700px] bg-gray-400"></div>
+          <div className="rounded-xl w-[50%] min-w-[50%] min-h-[700px] bg-hgray-400"></div>
           <div className="w-full flex flex-col gap-12">
             <TextInput placeholder="Address line 1" />
             <TextInput placeholder="Address line 2" />
@@ -88,7 +88,7 @@ const AddProperty = () => {
           <h3 className={`${questionStyles}`}>
             Share some basics about your place
           </h3>
-          <h4 className="font-medium text-[16px] leading-[20px] text-gray-500">
+          <h4 className="font-medium text-[16px] leading-[20px] text-hgray-500">
             You'll add more details later, like bed types
           </h4>
         </div>
@@ -105,7 +105,7 @@ const AddProperty = () => {
           <h3 className={`${questionStyles}`}>
             Tell guests what your place has to offer
           </h3>
-          <h4 className="font-medium text-[16px] leading-[20px] text-gray-500">
+          <h4 className="font-medium text-[16px] leading-[20px] text-hgray-500">
             You can add more details later
           </h4>
         </div>
@@ -123,7 +123,7 @@ const AddProperty = () => {
 
         {/* Safety amenities */}
         <div>
-          <h4 className="mb-10 font-medium text-[16px] leading-[20px] text-gray-500">
+          <h4 className="mb-10 font-medium text-[16px] leading-[20px] text-hgray-500">
             Do you have any of these safety items?
           </h4>
           <div className="flex gap-5">
@@ -144,12 +144,12 @@ const AddProperty = () => {
       <div className="mt-16 flex flex-col gap-10">
         <div className="flex flex-col gap-3">
           <h3 className={`${questionStyles}`}>Add some photos of your house</h3>
-          <h4 className="font-medium text-[16px] leading-[20px] text-gray-500">
+          <h4 className="font-medium text-[16px] leading-[20px] text-hgray-500">
             You'll need 5 to get started.
           </h4>
         </div>
-        <div className="border border-gray-400 h-[456px] max-h-[456px] rounded-xl flex justify-center items-center">
-          <Images size={64} strokeWidth={1} color="gray" />
+        <div className="border border-hgray-400 h-[456px] max-h-[456px] rounded-xl flex justify-center items-center">
+          <Images size={64} strokeWidth={1} color="hgray" />
         </div>
       </div>
     </Container>

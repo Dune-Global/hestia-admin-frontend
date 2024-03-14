@@ -63,13 +63,13 @@ export default function Streamline() {
           </div>
           <div className="flex gap-16 justify-center">
             <div>
-              <Button className="bg-gray-900" onClick={handleSignUpClick}>
+              <Button className="bg-hgray-900 text-hgray-0" onClick={handleSignUpClick}>
                 Sign Up
               </Button>
             </div>
             <div>
               <Button
-                className="text-gray-950 bg-gray-0 border border-gray-900"
+                className="text-hgray-950 bg-hgray-0 border border-hgray-900"
                 onClick={handleSignInClick}
               >
                 Sign In

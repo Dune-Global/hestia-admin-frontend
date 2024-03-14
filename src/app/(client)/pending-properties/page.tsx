@@ -29,7 +29,7 @@ export default function PendingPropertiesPage() {
       <div className="pb-16 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8">
         {Properties.map((property) => (
           <div
-            className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg"
+            className="p-4 flex flex-col gap-1 border border-hhgray-400 rounded-lg"
             key={property.id}
           >
             <PropertyCard
@@ -58,4 +58,4 @@ export default function PendingPropertiesPage() {
       </div>
     </Container>
   );
-};
+}

@@ -14,7 +14,7 @@ const Hostinglinks: IFooterHosting[] = [
   {
     id: 6,
     name: "Approved",
-    link: "/approved",
+    link: "/approved-properties",
   },
 ];
 export default Hostinglinks;

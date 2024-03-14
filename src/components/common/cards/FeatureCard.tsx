@@ -19,7 +19,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div
-      className={`w-[190px] min-w-[190px]  min-h-[115px] bg-white border-2 border-gray-300 rounded-xl p-4 flex flex-col  items-center ${
+      className={`w-[190px] min-w-[190px]  min-h-[115px] bg-white border-2 border-hgray-300 rounded-xl p-4 flex flex-col  items-center ${
         variant === "svg" ? "justify-between gap-2" : "justify-evenly"
       } ${clickable ? "cursor-pointer" : "cursor-default"}`}
     >
@@ -32,7 +32,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           </div>
         )}
       </div>
-      <div className="text-gray-900 font-medium text-lg">{bottomText}</div>
+      <div className="text-hgray-900 font-medium text-lg">{bottomText}</div>
     </div>
   );
 };

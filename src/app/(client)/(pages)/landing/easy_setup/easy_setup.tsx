@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Easysetup_para1, Easysetup_para2, Easysetup_para3 } from "../content";
 
 const SectionStyle = {
-  section: "flex flex-col gap-5 flex-1 p-5 border-2 rounded-md shadow-xl",
+  section: "flex flex-col gap-5 flex-1 p-5 border rounded-md shadow-xl",
   font: "flex font-semibold  justify-center lg:justify-start text-lg ",
 };
 export default function Easysetup() {

@@ -31,8 +31,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         />
       </div>
       <div className="text-lg pt-2 font-medium">{name}</div>
-      <div className="text-hgray-500">{location}</div>
-      <div className="flex text-sm md:text-xs lg:text-sm gap-1 pb-2 text-hgray-500 flex-1">
+      <div className="text-hhgray-500">{location}</div>
+      <div className="flex text-sm md:text-xs lg:text-sm gap-1 pb-2 text-hhgray-500 flex-1">
         <div>{bedrooms} bedroom</div>
         <div>-</div>
         <div>{beds} beds</div>
