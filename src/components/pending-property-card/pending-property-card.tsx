@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-interface PropertyCardProps {
+import { Button } from "../common/buttons/button";
+
+interface PendingPropertyCardProps {
   id: number;
   image: string;
   name: string;
@@ -10,7 +12,7 @@ interface PropertyCardProps {
   bathrooms: number;
 }
 
-const PropertyCard: React.FC<PropertyCardProps> = ({
+const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({
   id,
   image,
   name,
@@ -20,7 +22,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   bathrooms,
 }) => {
   return (
-    <div>
+    <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg">
       <div>
         <Image
           src={image}
@@ -39,8 +41,20 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         <div>-</div>
         <div>{bathrooms} bathroom</div>
       </div>
+      <div className="flex gap-3">
+        <div>
+          <Button variant="fillBlack" size="sm">
+            Edit
+          </Button>
+        </div>
+        <div>
+          <Button variant="outline" size="sm">
+            Delete
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default PropertyCard;
+export default PendingPropertyCard;

@@ -3,10 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/common/buttons/button";
 import Container from "@/components/Container";
 import { Properties } from "@/data/properties";
-import PropertyCard from "@/components/property-card/property-card";
-import { MdPerson } from "react-icons/md";
-import { BiSolidMessage } from "react-icons/bi";
-
+import ApprovedPropertyCard from "@/components/approved-property-card/approved-property-card";
 
 export default function PendingPropertiesPage() {
   return (
@@ -31,11 +28,8 @@ export default function PendingPropertiesPage() {
       </div>
       <div className="pb-16 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8">
         {Properties.map((property) => (
-          <div
-            className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg"
-            key={property.id}
-          >
-            <PropertyCard
+          <div key={property.id}>
+            <ApprovedPropertyCard
               id={property.id}
               image={property.image}
               name={property.name}
@@ -43,30 +37,9 @@ export default function PendingPropertiesPage() {
               bedrooms={property.bedrooms}
               beds={property.beds}
               bathrooms={property.bathrooms}
+              activeTenants={property.activeTenants}
+              bookingRequests={property.bookingRequests}
             />
-            <div className="flex gap-3">
-              <div>
-                <Button variant="outline" size="sm">
-                  Delete
-                </Button>
-              </div>
-              <div>
-                <Button variant="outline" size="freeSize">
-                  <div className="flex items-center gap-2">
-                    <div><MdPerson size={24}/></div>
-                    <div>{property.activeTenants}</div>
-                  </div>
-                </Button>
-              </div>
-              <div>
-                <Button variant="outline" size="freeSize">
-                  <div className="flex items-center gap-2">
-                    <div><BiSolidMessage size={20}/></div>
-                    <div>{property.bookingRequests}</div>
-                  </div>
-                </Button>
-              </div>
-            </div>
           </div>
         ))}
       </div>

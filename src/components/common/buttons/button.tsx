@@ -5,7 +5,7 @@ import { cn } from "@/utils/shad-utils";
 import { Loader2, ArrowRight } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-[16px] font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 ",
+  "inline-flex items-center justify-center whitespace-nowrap text-[16px] rounded-md font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 ",
   {
     variants: {
       variant: {

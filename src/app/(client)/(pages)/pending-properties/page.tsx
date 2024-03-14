@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/common/buttons/button";
 import Container from "@/components/Container";
 import { Properties } from "@/data/properties";
-import PropertyCard from "@/components/property-card/property-card";
+import PendingPropertyCard from "@/components/pending-property-card/pending-property-card";
 
 export default function PendingPropertiesPage() {
   return (
@@ -28,11 +28,8 @@ export default function PendingPropertiesPage() {
       </div>
       <div className="pb-16 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8">
         {Properties.map((property) => (
-          <div
-            className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg"
-            key={property.id}
-          >
-            <PropertyCard
+          <div key={property.id}>
+            <PendingPropertyCard
               id={property.id}
               image={property.image}
               name={property.name}
@@ -41,21 +38,9 @@ export default function PendingPropertiesPage() {
               beds={property.beds}
               bathrooms={property.bathrooms}
             />
-            <div className="flex gap-3">
-              <div>
-                <Button variant="fillBlack" size="sm">
-                  Edit
-                </Button>
-              </div>
-              <div>
-                <Button variant="outline" size="sm">
-                  Delete
-                </Button>
-              </div>
-            </div>
           </div>
         ))}
       </div>
     </Container>
   );
-};
+}
