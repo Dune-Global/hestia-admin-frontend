@@ -1,15 +1,13 @@
 import React from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/common/buttons/button";
 import Container from "@/components/Container";
 import { Properties } from "@/data/properties";
-import ApprovedPropertyCard from "@/components/approved-property-card/approved-property-card";
+import ApprovedPropertyCard from "@/components/common/cards/ApprovedPropertyCard";
 import PageHeader from "@/components/common/layout/PageHeader";
 
 export default function PendingPropertiesPage() {
   return (
     <Container>
-      <PageHeader title="Pending Properties"/>
+      <PageHeader title="Pending Properties" />
       <div className="pb-16 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8">
         {Properties.map((property) => (
           <div key={property.id}>
