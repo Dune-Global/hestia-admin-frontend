@@ -5,7 +5,7 @@ import { cn } from "@/utils/shad-utils";
 import { Loader2, ArrowRight } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-xl text-[16px] font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 ",
+  "inline-flex items-center justify-center whitespace-nowrap text-[16px] rounded-md font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 ",
   {
     variants: {
       variant: {
@@ -21,13 +21,13 @@ const buttonVariants = cva(
       },
       size: {
         default: "h-11 px-6 py-2",
-        sm: "h-9 px-4 text-sm rounded-md font-normal",
+        sm: "h-9 px-4 text-sm  font-normal",
         lg: "h-11 px-8 text-lg",
         icon: "h-10 w-10",
         sicon: "h-8 w-8",
         full: "h-10 px-4 py-2 w-full",
-        freeSize: "p-2 w-fit",
-        freeIcon: "p-1 w-fit",
+        freeSize: "px-3 h-9 w-fit",
+        freeIcon: "p-1 h-9 w-fit",
       },
     },
     defaultVariants: {
