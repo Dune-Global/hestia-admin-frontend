@@ -28,12 +28,12 @@ const ApprovedPropertyCard: React.FC<ApprovedPropertyCardProps> = ({
   bookingRequests,
 }) => {
   return (
-    <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg">
+    <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg max-w-360 min-w-[246px]">
       <div>
         <Image
           src={image}
           alt={name}
-          width={600}
+          width={1000}
           height={100}
           className="cover"
         />

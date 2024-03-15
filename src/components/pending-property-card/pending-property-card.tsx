@@ -22,7 +22,7 @@ const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({
   bathrooms,
 }) => {
   return (
-    <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg">
+    <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg max-w-80">
       <div>
         <Image
           src={image}
