@@ -26,15 +26,15 @@ const TextInput: React.FC<InputProps> = ({ placeholder }) => {
     <div className="relative">
       <input
         type="text"
-        className={`w-full px-4 pt-6 pb-2 border border-gray-600 rounded-lg focus:outline-none ${
-          focused ? "border-gray-800" : ""
+        className={`w-full px-4 pt-6 pb-2 border border-hgray-600 rounded-lg focus:outline-none ${
+          focused ? "border-hgray-800" : ""
         }`}
         onFocus={handleFocus}
         onBlur={handleBlur}
         onChange={handleChange}
       />
       <label
-        className={`absolute top-2 left-0 px-3 py-1 transition-all text-gray-400 ${
+        className={`absolute top-2 left-0 px-3 py-1 transition-all text-hgray-400 ${
           focused || hasContent
             ? "-translate-y-2 -translate-x-0 text-sm"
             : "translate-y-1 translate-x-1 text-base"

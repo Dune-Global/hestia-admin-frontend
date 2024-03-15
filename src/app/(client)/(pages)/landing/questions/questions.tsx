@@ -80,7 +80,7 @@ export default function Questions() {
       </div>
 
       {/*  */}
-      <div className="flex md:flex-row flex-col justify-center items-center gap-5 p-10 border rounded-lg md:p-20 md:justify-between bg-gray-0">
+      <div className="flex md:flex-row flex-col justify-center items-center gap-5 p-10 border rounded-lg md:p-20 md:justify-between bg-hgray-0">
         <div className="flex flex-col gap-5">
           <div className="font-extrabold text-4xl flex justify-center text-center">
             Still have questions?
@@ -92,7 +92,7 @@ export default function Questions() {
         </div>
 
         <div className="flex">
-          <Button className=" text-gray-950 bg-gray-0 border border-gray-900">
+          <Button className=" text-hgray-950 bg-hgray-0 border border-hgray-900">
             Connect with a Superhost
           </Button>
         </div>

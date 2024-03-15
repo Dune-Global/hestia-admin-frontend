@@ -84,7 +84,7 @@ const SignupForm = (props: Props) => {
           <div className="text-sm text-center ">
             <div className="text-black">
               Don&apos;t have an account?{" "}
-              <a href="/signin" className="text-gray-900 underline">
+              <a href="/signin" className="text-hgray-900 underline">
                 Sign in
               </a>
             </div>
@@ -191,13 +191,13 @@ const SignupForm = (props: Props) => {
                             <EyeOff
                               size={22}
                               strokeWidth={1}
-                              className="text-gray-600"
+                              className="text-hgray-600"
                             />
                           ) : (
                             <Eye
                               size={22}
                               strokeWidth={1}
-                              className="text-gray-600"
+                              className="text-hgray-600"
                             />
                           )}
                         </button>
@@ -233,13 +233,13 @@ const SignupForm = (props: Props) => {
                             <EyeOff
                               size={22}
                               strokeWidth={1}
-                              className="text-gray-600"
+                              className="text-hgray-600"
                             />
                           ) : (
                             <Eye
                               size={22}
                               strokeWidth={1}
-                              className="text-gray-600"
+                              className="text-hgray-600"
                             />
                           )}
                         </button>
@@ -253,7 +253,7 @@ const SignupForm = (props: Props) => {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="flex items-center justify-between w-full text-sm text-gray-600">
+              <div className="flex items-center justify-between w-full text-sm text-hgray-600">
                 <div className="flex items-center gap-1 lg:gap-2 font-semibold">
                   <Checkbox id="terms" />
                   <p>I agree to the Terms and Conditions.</p>
@@ -263,7 +263,7 @@ const SignupForm = (props: Props) => {
               <div className="flex">
                 <Button
                   type="submit"
-                  className="w-full bg-gray-900 text-gray-0"
+                  className="w-full bg-hgray-900 text-hgray-0"
                 >
                   Sign Up
                 </Button>

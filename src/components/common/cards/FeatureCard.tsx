@@ -31,7 +31,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           </div>
         )}
       </div>
-      <div className="text-gray-900 font-medium text-lg text-center">{bottomText}</div>
+      <div className="text-hgray-900 font-medium text-lg text-center">{bottomText}</div>
     </div>
   );
 };

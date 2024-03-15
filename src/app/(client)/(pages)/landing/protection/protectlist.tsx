@@ -17,7 +17,7 @@ export default function ProtectList() {
         <div className="flex ">Competitors</div>
       </div>
       {/*  */}
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
 
       <div className="flex font-bold text-lg ">Guest identity verification</div>
       <div className="flex items-center  ">
@@ -32,7 +32,7 @@ export default function ProtectList() {
         </div>
       </div>
 
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       {/*  */}
       <div className="flex font-bold text-lg">Reservation screening</div>
@@ -47,7 +47,7 @@ export default function ProtectList() {
           </div>
         </div>
       </div>
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       {/*  */}
       <div className="flex font-bold text-lg ">Damage protection</div>
@@ -62,7 +62,7 @@ export default function ProtectList() {
           </div>
         </div>
       </div>
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       {/*  */}
       <div className="flex font-bold text-lg">Liability insurance</div>
@@ -77,7 +77,7 @@ export default function ProtectList() {
           </div>
         </div>
       </div>
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       {/*  */}
       <div className="flex font-bold text-lg">24-hour safety line</div>
@@ -92,12 +92,12 @@ export default function ProtectList() {
           </div>
         </div>
       </div>
-      <div className="w-auto bg-gray-300 h-0.5 "></div>
+      <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       <div className="flex flex-col gap-4">
         <div className="justify-center flex text-center text-base">{Comparison}</div>
         <div className="flex justify-center">
-          <Button className="text-gray-950 bg-gray-0 border border-gray-900">
+          <Button className="text-hgray-950 bg-hgray-0 border border-hgray-900">
             Learn More
           </Button>
         </div>

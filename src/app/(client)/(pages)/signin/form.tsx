@@ -56,7 +56,7 @@ const SigninForm = (props: Props) => {
           <div className="text-sm text-center ">
             <p className="text-black">
               Don&apos;t have an account?{" "}
-              <a href="/signup" className="text-gray-900 underline">
+              <a href="/signup" className="text-hgray-900 underline">
                 Sign up
               </a>
             </p>
@@ -125,7 +125,7 @@ const SigninForm = (props: Props) => {
                 />
               </div>
               <div className="">
-                <Button className="w-full bg-gray-900 text-gray-0">
+                <Button className="w-full bg-hgray-900 text-hgray-0">
                   Sign In
                 </Button>
               </div>
