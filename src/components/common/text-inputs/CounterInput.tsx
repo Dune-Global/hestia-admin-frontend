@@ -20,16 +20,16 @@ const CounterInput: React.FC<CounterInputProps> = ({ label }) => {
   };
 
   return (
-    <div className="flex justify-between items-center pb-8 border-b border-gray-300">
+    <div className="flex justify-between items-center pb-8 border-b border-hgray-300">
       <span className="font-medium text-[18px] leading-[24px]">{label}</span>
       <div className="flex items-center">
         <button
           onClick={handleDecrement}
-          className="rounded-full border border-gray-400 w-7 h-7 flex justify-center items-center mr-2"
+          className="rounded-full border border-hgray-400 w-7 h-7 flex justify-center items-center mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-3 w-3 text-gray-600"
+            className="h-3 w-3 text-hgray-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -42,16 +42,16 @@ const CounterInput: React.FC<CounterInputProps> = ({ label }) => {
             />
           </svg>
         </button>
-        <span className="font-medium text-[18px] leading-[24px]  w-8 h-8 flex justify-center items-center rounded-full text-gray-600 ">
+        <span className="font-medium text-[18px] leading-[24px]  w-8 h-8 flex justify-center items-center rounded-full text-hgray-600 ">
           {count}
         </span>
         <button
           onClick={handleIncrement}
-          className="rounded-full border border-gray-400 w-7 h-7 flex justify-center items-center ml-2"
+          className="rounded-full border border-hgray-400 w-7 h-7 flex justify-center items-center ml-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 text-gray-600"
+            className="h-4 w-4 text-hgray-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
