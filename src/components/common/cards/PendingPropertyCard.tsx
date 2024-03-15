@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../common/buttons/button";
+import { Button } from "../buttons/button";
 
 interface PendingPropertyCardProps {
   id: number;
@@ -10,6 +10,8 @@ interface PendingPropertyCardProps {
   bedrooms: number;
   beds: number;
   bathrooms: number;
+  handleDelete?: () => void;
+  handleEdit?: () => void;
 }
 
 const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({
@@ -20,6 +22,8 @@ const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({
   bedrooms,
   beds,
   bathrooms,
+  handleDelete,
+  handleEdit,
 }) => {
   return (
     <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg max-w-80">
@@ -43,12 +47,12 @@ const PendingPropertyCard: React.FC<PendingPropertyCardProps> = ({
       </div>
       <div className="flex gap-3">
         <div>
-          <Button variant="fillBlack" size="sm">
+          <Button variant="fillBlack" size="sm" onClick={handleEdit}>
             Edit
           </Button>
         </div>
         <div>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" onClick={handleDelete}>
             Delete
           </Button>
         </div>

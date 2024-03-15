@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../common/buttons/button";
+import { Button } from "../buttons/button";
 import { MdPerson } from "react-icons/md";
 import { BiSolidMessage } from "react-icons/bi";
 
@@ -14,6 +14,9 @@ interface ApprovedPropertyCardProps {
   bathrooms: number;
   activeTenants: number;
   bookingRequests: number;
+  handleDelete?: () => void;
+  handleActiveTenants?: () => void;
+  handleBookingRequests?: () => void;
 }
 
 const ApprovedPropertyCard: React.FC<ApprovedPropertyCardProps> = ({
@@ -26,6 +29,9 @@ const ApprovedPropertyCard: React.FC<ApprovedPropertyCardProps> = ({
   bathrooms,
   activeTenants,
   bookingRequests,
+  handleDelete,
+  handleActiveTenants,
+  handleBookingRequests,
 }) => {
   return (
     <div className="p-4 flex flex-col gap-1 border border-hgray-400 rounded-lg max-w-360 min-w-[246px]">
@@ -50,12 +56,12 @@ const ApprovedPropertyCard: React.FC<ApprovedPropertyCardProps> = ({
       <div>
         <div className="flex gap-3">
           <div>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={handleDelete}>
               Delete
             </Button>
           </div>
           <div>
-            <Button variant="outline" size="freeSize">
+            <Button variant="outline" size="freeSize" onClick={handleActiveTenants}>
               <div className="flex items-center gap-2">
                 <div>
                   <MdPerson size={24} />
@@ -68,7 +74,7 @@ const ApprovedPropertyCard: React.FC<ApprovedPropertyCardProps> = ({
             <Button variant="outline" size="freeSize">
               <div className="flex items-center gap-2">
                 <div>
-                  <BiSolidMessage size={20} />
+                  <BiSolidMessage size={20} onClick={handleBookingRequests}/>
                 </div>
                 <div>{bookingRequests}</div>
               </div>
