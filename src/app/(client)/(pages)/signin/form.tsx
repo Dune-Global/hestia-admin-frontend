@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/common/buttons";
 import { Input } from "@/components/ui/input";
+import { toast, useToast } from "@/components/ui/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 type Props = {};
 
@@ -43,6 +45,9 @@ const SigninForm = (props: Props) => {
       password: "",
     },
   });
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values);
+  }
 
   const handleEyeClick = () => {
     setShowPassword(!showPassword);
@@ -63,7 +68,10 @@ const SigninForm = (props: Props) => {
           </div>
         </div>
         <Form {...form}>
-          <form className="space-y-3 w-full  px-2 mb-2 ">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-3 w-full  px-2 mb-2 "
+          >
             <div className="space-y-5 ">
               <div>
                 <div className="text-base">Username</div>
@@ -125,7 +133,10 @@ const SigninForm = (props: Props) => {
                 />
               </div>
               <div className="">
-                <Button className="w-full bg-hgray-900 text-hgray-0">
+                <Button
+                  className="w-full bg-hgray-900 text-hgray-0"
+                  type="submit"
+                >
                   Sign In
                 </Button>
               </div>

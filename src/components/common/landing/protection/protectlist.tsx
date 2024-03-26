@@ -23,11 +23,11 @@ export default function ProtectList() {
       <div className="flex items-center  ">
         <div className="sm:flex-1 flex text-base"> {ProtectionList1}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
-          <div className="sm:flex-1 flex justify-evenly text-green-400   ">
+          <div className="sm:flex-1 flex justify-evenly text-hgreen-400   ">
             <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400  ">
-            <X strokeWidth={5}/>
+            <X strokeWidth={5} />
           </div>
         </div>
       </div>
@@ -38,12 +38,13 @@ export default function ProtectList() {
       <div className="flex font-bold text-lg">Reservation screening</div>
       <div className="flex items-center  ">
         <div className="sm:flex-1 flex text-base"> {ProtectionList2}</div>
+
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
-          <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check strokeWidth={5}/>
+          <div className="sm:flex-1 flex justify-evenly text-hgreen-400   ">
+            <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X strokeWidth={5}/>
+            <X strokeWidth={5} />
           </div>
         </div>
       </div>
@@ -54,11 +55,11 @@ export default function ProtectList() {
       <div className="flex items-center  ">
         <div className="sm:flex-1 flex text-base"> {ProtectionList3}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
-          <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check strokeWidth={5}/>
+          <div className="sm:flex-1 flex justify-evenly text-hgreen-400   ">
+            <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X strokeWidth={5}/>
+            <X strokeWidth={5} />
           </div>
         </div>
       </div>
@@ -69,7 +70,7 @@ export default function ProtectList() {
       <div className="flex items-center  ">
         <div className="sm:flex-1 flex text-base"> {ProtectionList4}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
-          <div className="sm:flex-1 flex justify-evenly text-green-400   ">
+          <div className="sm:flex-1 flex justify-evenly text-hgreen-400   ">
             <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
@@ -84,18 +85,20 @@ export default function ProtectList() {
       <div className="flex items-center  ">
         <div className="sm:flex-1 flex text-base"> {ProtectionList5}</div>
         <div className="sm:flex-1 flex sm:gap-10 gap-5 justify-end">
-          <div className="sm:flex-1 flex justify-evenly text-green-400   ">
-            <Check strokeWidth={5}/>
+          <div className="sm:flex-1 flex justify-evenly text-hgreen-400   ">
+            <Check strokeWidth={5} />
           </div>
           <div className="sm:flex-1 flex justify-evenly text-red-400 ">
-            <X strokeWidth={5}/>
+            <X strokeWidth={5} />
           </div>
         </div>
       </div>
       <div className="w-auto bg-hgray-300 h-0.5 "></div>
       {/*  */}
       <div className="flex flex-col gap-4">
-        <div className="justify-center flex text-center text-base">{Comparison}</div>
+        <div className="justify-center flex text-center text-base">
+          {Comparison}
+        </div>
         <div className="flex justify-center">
           <Button className="text-hgray-950 bg-hgray-0 border border-hgray-900">
             Learn More

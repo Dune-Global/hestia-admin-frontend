@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Apartment } from "../content";
+import { Apartment } from "./content";
 import { Button } from "@/components/common/buttons";
 
 export default function Apartments() {

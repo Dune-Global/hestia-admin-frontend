@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, Route } from "lucide-react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -15,6 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/common/buttons";
+import { toast } from "@/components/ui/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 type Props = {};
 
@@ -54,6 +56,8 @@ const formBaseStyles = {
 };
 
 const SignupForm = (props: Props) => {
+  const router = useRouter();
+
   const [showPassword, setShowPassword] = useState(false);
   const [showPassword2, setShowPassword2] = useState(false);
 
@@ -63,7 +67,7 @@ const SignupForm = (props: Props) => {
       fullname: "",
       username: "",
       email: "",
-      phoneNumber: undefined,
+      phoneNumber: "",
       password: "",
       confirmpassword: "",
     },
@@ -75,6 +79,35 @@ const SignupForm = (props: Props) => {
   const handleEyeClick2 = () => {
     setShowPassword2(!showPassword2);
   };
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      if (values.password !== values.confirmpassword) {
+        return toast({
+          // variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "Email or Password is incorrect.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        });
+      }
+
+      toast({
+        variant: "default",
+        title: "Welcome back!",
+        description: "Welcome back",
+        action: <ToastAction altText="Try again">Go to home</ToastAction>,
+      });
+      router.push("/dashboard");
+    } catch (error) {
+      toast({
+        // variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "Email or Password is incorrect.",
+        action: <ToastAction altText="Try again">Try again</ToastAction>,
+      });
+      console.error(error);
+    }
+    console.log(values);
+  }
 
   return (
     <div className="flex flex-col gap-4 items-end justify-center ">
@@ -91,7 +124,10 @@ const SignupForm = (props: Props) => {
           </div>
         </div>
         <Form {...form}>
-          <form className="space-y-3 w-full py-2 ">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-3 w-full py-2 "
+          >
             <div className="space-y-3">
               <div>
                 <div>Full Name</div>

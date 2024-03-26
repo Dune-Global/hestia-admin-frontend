@@ -26,6 +26,7 @@ export default function SignIn() {
             ></Image>{" "}
           </div>
           <div className="flex justify-center h-[600px]">
+            
             <SigninForm />
           </div>
         </div>

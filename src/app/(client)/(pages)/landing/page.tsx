@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Easysetup from "./easy_setup/easy_setup";
-import ToptoBottom from "./protection/protect";
-import Apartments from "./apartments/apartments";
-import Questions from "./questions/questions";
-import Streamline from "./streamline/streamline";
+import Easysetup from "../../../../components/common/landing/easy_setup";
+import ToptoBottom from "../../../../components/common/landing/protection/protect";
+import Apartments from "../../../../components/common/landing/apartments";
+import Questions from "../../../../components/common/landing/questions";
+import Streamline from "../../../../components/common/landing/streamline";
 import Container from "@/components/Container";
 
 export default function Landing() {

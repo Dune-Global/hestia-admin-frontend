@@ -1,4 +1,3 @@
-import exp from "constants";
 
 export const Easysetup_para1 =
   "We’ll match you with a superhost in your area ,who’ll guide you from your first question to your first guest - by phone, video call, or chat.";
