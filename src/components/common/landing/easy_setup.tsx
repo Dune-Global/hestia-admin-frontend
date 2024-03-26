@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Easysetup_para1, Easysetup_para2, Easysetup_para3 } from "../content";
+import { Easysetup_para1, Easysetup_para2, Easysetup_para3 } from "./content";
 
 const SectionStyle = {
   section: "flex flex-col gap-5 flex-1 p-5 border-2 rounded-md shadow-xl",

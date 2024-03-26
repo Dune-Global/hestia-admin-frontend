@@ -8,7 +8,7 @@ import {
   Streamline_list3,
   Streamline_list4,
   Streamline_list5,
-} from "../content";
+} from "./content";
 import { Check } from "lucide-react";
 import { Button } from "@/components/common/buttons";
 import { useRouter } from "next/navigation";
